@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "OkCupid Charts",
+  "description": "Try out a data driven approach to online dating using OkCupid Charts Extension. This Chrome extension allows you to filter OkC matches using interactive charts and graphs. Easily explore profile data and find your very own special “data point”.",
+  "version": "1.0",
+  "icons": {
+	"64": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+	"webRequest",
+    "tabs",
+    "https://*.okcupid.com/*"
+  ],
+  "background": {
+    "scripts": ["db.js", "background.js", "javascripts/gatracker.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

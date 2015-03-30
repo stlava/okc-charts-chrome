@@ -1,0 +1,81 @@
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'>
+		<title>OkCupid Charts Search Data</title>
+
+		<script src='../javascripts/d3.js' type='text/javascript'></script>
+		<script src='../javascripts/crossfilter.js' type='text/javascript'></script>
+		<script src='../javascripts/dc.js' type='text/javascript'></script>
+		<script src='../javascripts/jquery-1.9.1.min.js' type='text/javascript'></script>
+		<script src='../javascripts/bootstrap.min.js' type='text/javascript'></script>
+		<link href='../stylesheets/bootstrap.min.css' rel='stylesheet' type='text/css'>
+		<link href='../stylesheets/dc.css' rel='stylesheet' type='text/css'>
+		<link href='../stylesheets/charts.css' rel='stylesheet' type='text/css'>
+		<script src='../db.js' type='text/javascript'></script>
+		<script src="search.js"></script>
+		<script src='chart_helpers.js' type='text/javascript'></script>
+		<script src='searcher.js' type='text/javascript'></script>
+		<script src="../javascripts/gatracker.js"></script>
+	</head>
+	<body>
+		<div class='navbar navbar-fixed-top'>
+			<div class='navbar-inner'>
+				<div class='container'>
+					<a class="brand" href="http://okcupid.com">OkCupid Charts Search Data</a>
+				</div>
+			</div>
+		</div>
+		<div class='container' id='main-container'>
+			<div class='content'>
+				<div class='container' style='font: 10px sans-serif;'>
+					<div class='row'>
+						<div class='span9' id='dc-matchvfriend-chart'>
+							<h4>Match vs Friend</h4>
+						</div>
+						<div class='span5' id='dc-age-chart'>
+							<h4>Age</h4>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span9' id='dc-contactvreply-chart'>
+							<h4>Recent Contacts vs Replies</h4>
+						</div>
+						<div class='span5' id='dc-contactsweek-chart'>
+							<h4>Contacts this week</h4>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span9' id='dc-replypercent-chart'>
+							<h4>Reply Percent</h4>
+						</div>
+						<div class='span5' id='dc-lastlogin-chart'>
+							<h4>Last online</h4>
+						</div>
+					</div>
+					<div class='row-fluid'>
+						<div class='span12 table-graph'>
+							<h4>Matches</h4>
+							<table class='table table-hover dc-data-table' id='dc-table-graph'>
+								<thead>
+									<tr class='header'>
+										<th>Username</th>
+										<th>%&nbsp;Match</th>
+										<th>%&nbsp;Enemy</th>
+										<th>Reply&nbsp;%</th>
+										<th>Location</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='footer'>
+			<div class='container'>
+				<footer class='text-center'></footer>
+			</div>
+		</div>
+	</body>
+</html>

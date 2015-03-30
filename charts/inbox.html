@@ -1,0 +1,91 @@
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'>
+		<title>OKCupid Charts Inbox Data</title>
+
+		<script src='../javascripts/d3.js' type='text/javascript'></script>
+		<script src='../javascripts/crossfilter.js' type='text/javascript'></script>
+		<script src='../javascripts/dc.js' type='text/javascript'></script>
+		<script src='../javascripts/jquery-1.9.1.min.js' type='text/javascript'></script>
+		<script src='../javascripts/bootstrap.min.js' type='text/javascript'></script>
+		<link href='../stylesheets/bootstrap.min.css' rel='stylesheet' type='text/css'>
+		<link href='../stylesheets/dc.css' rel='stylesheet' type='text/css'>
+		<link href='../stylesheets/charts.css' rel='stylesheet' type='text/css'>
+		<script src='../db.js' type='text/javascript'></script>
+		<script src="inbox.js"></script>
+		<script src='chart_helpers.js' type='text/javascript'></script>
+		<script src='profiles.js' type='text/javascript'></script>
+		<script src="../javascripts/gatracker.js"></script>
+	</head>
+	<body>
+		<div class='navbar navbar-fixed-top'>
+			<div class='navbar-inner'>
+				<div class='container'>
+					<a class="brand" href="http://okcupid.com">OKCupid Charts Inbox Data</a>
+				</div>
+			</div>
+		</div>
+		<div class='container' id='main-container'>
+			<div class='content'>
+				<div class='container' style='font: 10px sans-serif;'>
+					<div class='row'>
+						<div class='span9' id='dc-composite-chart'>
+							<h4>Match vs Friend</h4>
+						</div>
+						<div class='span6' id='dc-looking-for-chart'>
+							<h4>Looking For</h4>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span5' id='dc-age-chart'>
+							<h4>Age</h4>
+						</div>
+						<div class='span5' id='dc-distance-chart'>
+							<h4>Distance</h4>
+						</div>
+						<div class='span5' id='dc-height-chart'>
+							<h4>Height</h4>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span5' id='dc-education-chart'>
+							<h4>Education</h4>
+						</div>
+						<div class='span4' id='dc-religion-chart'>
+							<h4>Religion</h4>
+						</div>
+						<div class='span4' id='dc-smoker-chart'>
+							<h4>Smoker</h4>
+						</div>
+						<div class='span1' id='dc-body-chart'>
+							<h4>Body&nbsp;Type</h4>
+						</div>
+					</div>
+					<div class='row-fluid'>
+						<div class='span12 table-graph'>
+							<h4>Matches</h4>
+							<table class='table table-hover dc-data-table' id='dc-table-graph'>
+								<thead>
+									<tr class='header'>
+										<th>Username</th>
+										<th>Location</th>
+										<th>%&nbsp;Match</th>
+										<th>%&nbsp;Enemy</th>
+										<th>Looking for</th>
+										<th>Ethnicities</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='footer'>
+			<div class='container'>
+				<footer class='text-center'></footer>
+			</div>
+		</div>
+	</body>
+</html>

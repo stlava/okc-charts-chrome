@@ -1,0 +1,15 @@
+body { 
+	padding-top: 40px; 
+}
+.span2, .span4, .span6, .span8, .span12, .container {
+	border:0px solid #dddddd;
+}
+#dc-education-chart svg { width: 350px; height: 150px; }
+#dc-religion-chart svg { width: 350px; }
+#dc-looking-for-chart svg { width: 700px; }
+#dc-age-chart svg { width: 500px; }
+#dc-body-chart svg { width: 350px; }
+#dc-smoker-chart svg { width: 350px; }
+.container {
+	width: 1200px !important;
+}
